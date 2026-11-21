@@ -106,7 +106,6 @@ mexer durante o `play`:
 | `tracker.cpp` | servidor de registro: classe `Tracker`, uma thread por conexão |
 | `peer.cpp` | classes `Library` (conteúdos e hashes), `StreamBuffer` (buffer do player), `TrackerClient` e `Peer` |
 | `conn.h` | classe `Conn`: conexão TCP com leitura por linha e por quantidade de bytes |
-| `PROTOCOLO.md` | especificação do protocolo e justificativa das escolhas |
 | `bench/` | scripts dos experimentos (`roda_tudo.sh`), resultados (`resultados.csv`) e o vídeo de teste |
 
 ## Protocolo
@@ -132,7 +131,7 @@ Entre peers:
 | `INFO <conteudo>` | `OK <tamanho> <n_partes>`, um SHA-256 por linha e, por último, o HMAC da lista |
 | `GET <conteudo> <parte>` | `OK <len>` e depois `len` bytes |
 
-Erros voltam como `ERR <CODIGO> <mensagem>`. A especificação completa está em `PROTOCOLO.md`.
+Erros voltam como `ERR <CODIGO> <mensagem>`.
 
 ## Limitações
 
