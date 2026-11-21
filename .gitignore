@@ -1,0 +1,7 @@
+tracker
+peer
+*.o
+__pycache__/
+relatorio.md
+relatorio.pdf
+PROTOCOLO.md
